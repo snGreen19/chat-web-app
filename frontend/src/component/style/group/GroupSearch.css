@@ -1,0 +1,54 @@
+.addedMember {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.addedMember span {
+  margin: 4px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  background-color: rgb(250, 241, 228);
+}
+.addedMember span svg {
+  font-size: 8px;
+  cursor: pointer;
+}
+.groupUserListBox {
+  height: 48px;
+  width: 95%;
+  background-color: rgb(224, 223, 223);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 8px 0px;
+  cursor: pointer;
+}
+.groupUserListBox:hover {
+  background-color: rgb(204, 203, 203);
+}
+.groupUserListBox .image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+}
+.groupUserListBox .info {
+  margin-left: 5px;
+}
+.groupUserListBox .image image {
+  width: 100%;
+}
+
+.groupUserListBox .info p {
+  font-size: 0.8rem;
+}
+.groupUserListBox .info h2 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.chakra-modal__body {
+  padding: 11px !important;
+}

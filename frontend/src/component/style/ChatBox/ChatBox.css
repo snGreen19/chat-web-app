@@ -1,0 +1,107 @@
+.allChatingBox {
+  height: 95%;
+  width: 95%;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.allChatingBox::before {
+  content: "";
+  position: absolute;
+  background: url("../../../image/chat-background.jpg") no-repeat center
+    center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  z-index: -2;
+}
+
+.backArrawBtn {
+  height: 30px;
+  width: 30px;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  display: none;
+}
+.selcetUserInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 7px;
+  position: relative;
+}
+.selcetUserInfo .editGroupIcon {
+  content: "";
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+  right: -32px;
+}
+
+.selcetUserInfo .selectImg {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.selcetUserInfo .selectImg img {
+  width: 100%;
+  cursor: pointer;
+}
+.selcetUserInfo span {
+  margin-left: 10px;
+  position: relative;
+}
+.css-wubf5g {
+  padding: 0;
+  margin: 0;
+}
+
+.allMessagesBox {
+  height: 95%;
+  width: 100%;
+  background-color: rgb(168, 167, 167, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+
+  position: relative;
+  z-index: 10;
+}
+.allMessagesBox form input {
+  width: 100%;
+  border-radius: 25px;
+  background-color: white;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 15;
+  height: 40px;
+  outline: none;
+  border: 1px solid rgb(167, 165, 165);
+  font-size: 1.05rem;
+  padding: 0 20px;
+}
+.allMessagesBox form input:focus {
+  border: 1px solid rgb(243, 161, 147);
+}
+.inputLoading {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  right: 24px;
+  bottom: 28px;
+  z-index: 16;
+}
+@media screen and (max-width: 650px) {
+  .backArrawBtn {
+    display: unset;
+  }
+}

@@ -1,0 +1,72 @@
+.allChatBox {
+  height: 95%;
+  width: 95%;
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.allChatBox .loadingForUsers {
+  width: 83%;
+  margin: auto;
+}
+
+.chatHistory {
+  width: 110px;
+  margin: 14px;
+}
+
+.myChatItemBox {
+  height: 50px;
+  width: 83%;
+  background-color: rgb(235 235 235);
+
+  border-radius: 50px;
+  margin: auto;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.myChatItemBox:hover {
+  background-color: rgb(232, 231, 231);
+}
+.myChatItemBox .image {
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.myChatItemBox .image img {
+  width: 100%;
+}
+.myChatItemBox .chatInfo {
+  padding: 5px;
+  margin-left: 8px;
+}
+.myChatItemBox .chatInfo h2 {
+  font-weight: 500;
+  line-height: 16px;
+}
+.myChatItemBox .chatInfo p {
+  font-size: 0.9vmax;
+  color: rgb(150, 150, 150);
+}
+.myChatItemBox .chatInfo p span {
+  font-size: 0.9vmax;
+  color: rgb(11, 11, 11);
+}
+
+@media screen and (max-width: 650px) {
+  .myChatItemBox {
+    width: 93%;
+  }
+  .myChatItemBox .chatInfo h2 {
+    line-height: 20px;
+  }
+  .myChatItemBox .chatInfo p,
+  .myChatItemBox .chatInfo p span {
+    font-size: 1.5vmax;
+  }
+}

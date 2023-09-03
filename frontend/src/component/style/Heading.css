@@ -1,0 +1,42 @@
+.head-right > div {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.head-right > div img {
+  width: 100%;
+  z-index: 2;
+}
+
+.modalImageBox {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.modalImageBox > div {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+}
+.modalImageBox > div > img {
+  width: 100%;
+}
+.modalImageBox p,
+.modalImageBox h2 {
+  font-size: 1.4rem;
+  margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .removeMobile {
+    display: none;
+  }
+}

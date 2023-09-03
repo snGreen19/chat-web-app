@@ -1,0 +1,42 @@
+.singleMessageBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  padding: 80px 10px;
+  padding-top: 300px;
+}
+
+.singleMessageBox::-webkit-scrollbar {
+  display: none;
+}
+
+.messageText {
+  margin: 2px 5px;
+  background-color: white;
+  border: 1px solid rgb(208, 208, 208);
+  color: rgb(37, 37, 37);
+  border-radius: 50px;
+  padding: 4px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.senderImage {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5px;
+  position: absolute;
+  top: -4px;
+  left: -8px;
+}
+.senderImage image {
+  width: 100%;
+}

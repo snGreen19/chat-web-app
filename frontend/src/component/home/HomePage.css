@@ -1,0 +1,186 @@
+.homeContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.homeContainer::before {
+  content: "";
+  position: absolute;
+  background: url("../../image/chat-background.jpg") no-repeat center
+    center/cover;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.25;
+}
+.welcomeBox {
+  /* background-color: blue; */
+  position: absolute;
+  top: 20px;
+  width: 600px;
+  margin: auto;
+  font-size: 1.2rem;
+  color: rgb(249, 146, 128);
+  font-weight: bold;
+  text-align: center;
+}
+.welcomeBox span {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.loginSignupBox {
+  width: 400px;
+  height: auto;
+}
+.logSignHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logSignHeading button {
+  width: 48%;
+  padding: 13px;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 11px rgb(181, 181, 181);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: gray;
+  position: relative;
+  overflow: visible;
+  z-index: 3 !important;
+  background-color: white;
+}
+
+.logSignHeading button:hover {
+  color: rgb(249, 146, 128);
+}
+
+.SignUpBody form,
+.loginBody form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.SignUpBody form input,
+.loginBody form input {
+  background-color: white;
+  width: 100%;
+  padding: 13px 20px;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 11px rgb(181, 181, 181);
+  margin-top: 15px;
+  outline: none;
+}
+.custom-file-input::-webkit-file-upload-button {
+  border-radius: 60px;
+  border: 1px solid rgb(181, 181, 181);
+  padding: 3px 12px;
+  background-color: white;
+  color: rgb(67, 67, 67);
+  cursor: pointer;
+}
+.custom-file-input.add::-webkit-file-upload-button {
+  display: none;
+}
+.custom-file-input::-webkit-file-upload-button:hover {
+  background-color: rgb(224, 221, 221);
+}
+.custom-file-input {
+  color: transparent;
+}
+
+.SignUpBody form .submit,
+.loginBody form .submit {
+  width: 48%;
+  cursor: pointer;
+  font-weight: bold;
+  color: grey;
+}
+.SignUpBody form .submit:hover,
+.loginBody form .submit:hover {
+  color: rgb(249, 146, 128);
+}
+
+.blue {
+  color: rgb(249, 146, 128) !important;
+}
+.spinning {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 80px;
+}
+
+.imagesPreview {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(154, 152, 152);
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  bottom: 73px;
+  overflow: hidden;
+}
+.imagesPreview img {
+  width: 100%;
+}
+
+@media screen and (max-width: 610px) {
+  .welcomeBox {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .welcomeBox {
+    width: 95vw;
+    font-size: 1rem;
+  }
+  .welcomeBox span {
+    font-size: 0.9rem;
+  }
+  .logSignHeading button {
+    width: 48%;
+    padding: 10px;
+  }
+  .SignUpBody form input,
+  .loginBody form input {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  .loginSignupBox {
+    width: 90vw;
+    height: auto;
+  }
+  .spinning {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 12px;
+    right: 57px;
+  }
+  .imagesPreview {
+    height: 38px;
+    width: 38px;
+    border: 1px solid rgb(154, 152, 152);
+    border-radius: 50%;
+    position: absolute;
+    right: 11px;
+    bottom: 60px;
+    overflow: hidden;
+  }
+}
