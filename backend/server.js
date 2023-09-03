@@ -57,7 +57,6 @@ io.on("connection", (socket) => {
   });
   socket.on("joinChat", (room) => {
     socket.join(room);
-    // console.log("room", room);
   });
 
   socket.on("new", (newMessageRecieved) => {
