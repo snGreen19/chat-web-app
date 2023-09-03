@@ -12,7 +12,7 @@ import notificationSound from "../../../sound/notification.mp3";
 
 import io from "socket.io-client";
 
-const ENDPOINT = "http://127.0.0.1:4000";
+const ENDPOINT = "https://chat-random-web.onrender.com";
 var socket;
 
 function ChatBox() {
